@@ -1,0 +1,29 @@
+{
+  "name": "mkp-react-native-responsive-image",
+  "version": "1.0.0",
+  "description": "react native responsive image",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"test -d 'lib/' || mkdir -p lib && cp test/responsiveImage.js lib/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonkeyKingPlus/react-native-responsive-image.git"
+  },
+  "keywords": [
+    "react-native",
+    "image",
+    "responsive-image",
+    "responsive"
+  ],
+  "author": "m860",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MonkeyKingPlus/react-native-responsive-image/issues"
+  },
+  "homepage": "https://github.com/MonkeyKingPlus/react-native-responsive-image#readme"
+}
