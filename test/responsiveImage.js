@@ -57,7 +57,9 @@ export default class ResponsiveImage extends Component {
 		})
 
 		return (
-			<Image {...props}/>
+			<Image {...props}>
+				{this.props.children}
+			</Image>
 		);
 	}
 }
