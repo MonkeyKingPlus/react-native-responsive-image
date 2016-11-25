@@ -39,6 +39,8 @@ ios/android
 # Props
 ## image props
 [...Image Props](https://facebook.github.io/react-native/docs/image.html)
+* defaultSource is supported on IOS/Android
+* image cache is supported
 ## design
 ```javascript
 //define

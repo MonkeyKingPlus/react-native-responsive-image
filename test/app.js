@@ -49,6 +49,57 @@ export default class APP extends Component {
 								}
 							}));
 					}}/>
+				<View style={{justifyContent:"center",alignItems:"center"}}>
+					<Text>default source</Text>
+					<ResponsiveImage
+						defaultSource={require("./images/fav.png")}
+						design={{
+							size:{
+								width:40,
+								height:37
+							}
+						}}>
+					</ResponsiveImage>
+				</View>
+				<View style={{justifyContent:"center",alignItems:"center"}}>
+					<Text>source</Text>
+					<ResponsiveImage
+						source={require("./images/fav.png")}
+						design={{
+							size:{
+								width:40,
+								height:37
+							}
+						}}>
+					</ResponsiveImage>
+				</View>
+				<View style={{justifyContent:"center",alignItems:"center"}}>
+					<Text>remote source error</Text>
+					<ResponsiveImage
+						defaultSource={require("./images/fav.png")}
+						source={{uri:"http://www.baidu.com"}}
+						design={{
+							size:{
+								width:40,
+								height:37
+							}
+						}}>
+					</ResponsiveImage>
+
+				</View>
+				<View style={{justifyContent:"center",alignItems:"center"}}>
+					<Text>remote source success</Text>
+					<ResponsiveImage
+						defaultSource={require("./images/fav.png")}
+						source={{uri:"https://facebook.github.io/react/img/logo_og.png"}}
+						design={{
+							size:{
+								width:40,
+								height:37
+							}
+						}}>
+					</ResponsiveImage>
+				</View>
 			</View>
 		);
 	}
